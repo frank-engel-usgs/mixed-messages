@@ -1,50 +1,49 @@
-surround
-stab
-return
-medicate
-blindside
-boogie
-flap
-trip
-swat
-suck in
-harass
-trap
-snoop
-explode
-sketch
-scatter
-challenge
-fight
-bury
-splatter
-smack
-peddle
-balance
-trip up
-boggle
-poke
-critique
-fear
-initiate
-line up
-run over
-schedule
-cook
-imprison
-underestimate
-cajole
-wheedle
-soft soap
-butter up
-sweet-talk
-prevail
-shred
-drink
-dispute
-echo
-mimic
-berate
-castigate
-underrate
-taunt
+surrounded
+stabed
+returned
+medicated
+blindsided
+boogied
+flapped
+tripped
+swated
+sucked in
+harassed
+traped
+snooped
+exploded
+sketched
+scattered
+challenged
+fought
+buried
+splattered
+smacked
+peddled
+balanced
+tripped up
+boggled
+poked
+critiqued
+feared
+initiated
+lined up
+ran over
+scheduled
+cooked
+imprisoned
+underestimated
+cajoled
+wheedled
+buttered up
+sweet-talked
+prevailed
+shredded
+drank
+disputed
+echoed
+mimiced
+berated
+castigated
+underrated
+taunted

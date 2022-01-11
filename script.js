@@ -1,9 +1,5 @@
 // Vanilla javascript to create random sentences
 
-const { randomInt } = require('crypto');
-const { normalize } = require('path/posix');
-const { toUnicode } = require('punycode');
-
 // Load word lists into arrays
 const loadWordList = (fileName) => {
     let fs = require('fs');
@@ -47,6 +43,16 @@ const generateNounPhrase = (nouns, determiners, adjectives, prepositions, deterP
     return nounPhrase;
 };
 
+const generateVerbPhrase = (verbs, adverbs, advProb=0.75) => {
+    let verbPhrase = '';
+    if (Math.random() <= advProb) {
+        verbPhrase += adverbs[Math.floor(Math.random() * adverbs.length)] + ' ' + verbs[Math.floor(Math.random() * verbs.length)];
+    } else {
+        verbPhrase += verbs[Math.floor(Math.random() * verbs.length)];
+    };
+    return verbPhrase;
+};
+
 // Load known words into arrays
 const determiners =  loadWordList('determiners.txt');
 const nouns =  loadWordList('nouns.txt');
@@ -56,9 +62,10 @@ const adverbs =  loadWordList('adverbs.txt');
 const places =  loadWordList('places.txt');
 const prepositions =  loadWordList('prepositions.txt');
 
-let newSentence = createSetence('the fast car', 'speeds around the corner');
-for (let i=0 ; i<5; i++) {
-    console.log(generateNounPhrase(nouns, determiners, adjectives, prepositions));
+
+for (let i=0 ; i<100; i++) {
+    let newSentence = createSetence(generateNounPhrase(nouns, determiners, adjectives, prepositions), generateVerbPhrase(verbs, adverbs));
+    console.log(newSentence.getSentence());
 }
 
 
