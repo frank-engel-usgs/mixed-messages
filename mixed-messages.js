@@ -62,8 +62,8 @@ const adverbs =  loadWordList('adverbs.txt');
 const places =  loadWordList('places.txt');
 const prepositions =  loadWordList('prepositions.txt');
 
-
-for (let i=0 ; i<100; i++) {
+// Create some random sentences!
+for (let i=0 ; i<15; i++) {
     let newSentence = createSetence(generateNounPhrase(nouns, determiners, adjectives, prepositions), generateVerbPhrase(verbs, adverbs));
     console.log(newSentence.getSentence());
 }

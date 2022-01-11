@@ -1,23 +1,37 @@
-# mixed-messages
-Generate random messages that are entertaining. A learning project to practice and grow my javascript skills.
+# Mixed Messages - Random Sentence Generator
+Generate random messages that are entertaining and sometimes even grammatically correct. Written as a simple
+NODE.js application, this script will output several random sentences to the console constructed from the supplied 
+word lists. Some example outputs:
 
-# Brainstorming
-I want to make sentences that hopefully are gramatically correct, and make sense. My first thought is to use mad libs... in that case I'd want to get lits of nouns, verbs, adjectives, and adverbs. Turns out there are note that many pre-made lists out therE. But I found at least one after some digging here: https://www.studentandwriter.com/2018/02/09/funny-mad-libs-word-lists-adjectives-nouns-and-verbs-2/
+> One cocky matrimonial law judgmentally swated.
+>
+> Your goal in life utterly splattered.
+>
+> Her impertinent idiot helpfully sweet-talked.
+>
+> Some considerate louse patiently critiqued.
 
-## Sentence Structure
-A sentence should follow these rules, adapted from [here](https://www.studentandwriter.com/2018/02/09/funny-mad-libs-word-lists-adjectives-nouns-and-verbs-2/):
-1. Begin with a captital letter
-2. End with punctuation 
-3. Contain a subject
-4. Contain a verb or verb phrase 
-5. Follow subject + verb + object word order
+This is a learning project to practice and grow my javascript skills. The orignal "assignment"
+is from the [Codecademy Full-Stack Engineer](https://www.codecademy.com/learn/paths/full-stack-engineer-career-path) path. 
 
-## Code structure
-* Files with words per category (noun, verb, etc)
-* Sentence as an object, produce objects with object factory
-* Sentence object will take in word lists and generate sentences. Might be good to add probabilities to how often noun/verb/adverbs come up
-* Create sentences by building:
-    * "noun phrases" : determining words + adjetive + noun. e.g., "Your fat cat"
-    * "verb phrases" : adverb + verb, e.g. "mostly sleeps"
-    * prepositions : words indicating postion. e.g., "Your fat cat mostly sleeps **in**"
-    * location : could be specific, or non-specific, e.g.,  "Your fat cat mostly sleeps in the sun."
+# Getting Started
+Clone this repository to your local machine in the typical fashion. Open a terminal within the root 
+folder, and run the following command:
+
+```javascript
+node mixed-messages.js
+```
+
+See anything amiss? If so, create an [issue](https://github.com/frank-engel-usgs/mixed-messages/issues/new).
+
+## Prerequisites 
+* Node.js v8 or later
+
+# License
+GNU General Public License v3.0
+
+# Acknowledgements
+Credit due to Hannah Newman's lovely [sentence-generator](https://github.com/mistralnewman/sentence-generator) project for
+some of the approach and concept, as well as the lists of prepositions and determiners words. Basically, this project is a refactor of Hannah's approach in JavaScript. 
+
+Also, I used this [Students and Writers](https://www.studentandwriter.com/2018/02/09/funny-mad-libs-word-lists-adjectives-nouns-and-verbs-2/) blog post to get a pretty hilarious list of nouns, adverbs, and verbs. 
